@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GetToKnowMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ali" translatesAutoresizingMaskIntoConstraints="NO" id="iy5-C4-Yfp">
+                                <rect key="frame" x="67" y="68" width="241" height="215"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get to Know Me: Thomas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7a-KS-T1f">
+                                <rect key="frame" x="46" y="350" width="300" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="WBh-tO-zzv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yH-SE-jR1">
+                                <rect key="frame" x="43" y="466" width="52" height="30"/>
+                                <state key="normal" title="ALBUM">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDb-FF-AHh">
+                                <rect key="frame" x="299" y="466" width="50" height="30"/>
+                                <state key="normal" title="SHOES">
+                                    <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Here's a few facts about me. Click each button to find out." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2yf-mS-Xi2">
+                                <rect key="frame" x="67" y="568" width="241" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMT-zu-Yfd">
+                                <rect key="frame" x="153" y="466" width="87" height="30"/>
+                                <state key="normal" title="PROFESSOR">
+                                    <color key="titleColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5yH-SE-jR1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="2hr-np-1VG"/>
+                            <constraint firstItem="5yH-SE-jR1" firstAttribute="baseline" secondItem="wMT-zu-Yfd" secondAttribute="baseline" id="BjL-8Z-f22"/>
+                            <constraint firstItem="5yH-SE-jR1" firstAttribute="top" secondItem="wMT-zu-Yfd" secondAttribute="top" id="Dpp-zY-ww0"/>
+                            <constraint firstItem="c7a-KS-T1f" firstAttribute="top" secondItem="iy5-C4-Yfp" secondAttribute="bottom" constant="67" id="EIy-o2-rFT"/>
+                            <constraint firstItem="2yf-mS-Xi2" firstAttribute="trailing" secondItem="iy5-C4-Yfp" secondAttribute="trailing" id="PiT-B5-clx"/>
+                            <constraint firstItem="c7a-KS-T1f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="TPU-8W-3vK"/>
+                            <constraint firstItem="2yf-mS-Xi2" firstAttribute="leading" secondItem="iy5-C4-Yfp" secondAttribute="leading" id="TvM-0V-lpz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5yH-SE-jR1" secondAttribute="bottom" constant="282" id="Xxx-sZ-LEL"/>
+                            <constraint firstItem="iy5-C4-Yfp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cZc-tP-HtA"/>
+                            <constraint firstItem="wMT-zu-Yfd" firstAttribute="baseline" secondItem="VDb-FF-AHh" secondAttribute="baseline" id="dAh-Vj-vdh"/>
+                            <constraint firstItem="iy5-C4-Yfp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="eFW-Os-X3L"/>
+                            <constraint firstItem="2yf-mS-Xi2" firstAttribute="top" secondItem="5yH-SE-jR1" secondAttribute="bottom" constant="72" id="g53-Iz-gah"/>
+                            <constraint firstItem="iy5-C4-Yfp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="oTS-6L-BoU"/>
+                            <constraint firstItem="5yH-SE-jR1" firstAttribute="top" secondItem="c7a-KS-T1f" secondAttribute="bottom" constant="87" id="qIh-cx-CZR"/>
+                            <constraint firstItem="c7a-KS-T1f" firstAttribute="centerX" secondItem="wMT-zu-Yfd" secondAttribute="centerX" id="sOd-30-pvq"/>
+                            <constraint firstItem="VDb-FF-AHh" firstAttribute="leading" secondItem="wMT-zu-Yfd" secondAttribute="trailing" constant="59" id="uFo-po-1sw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2yf-mS-Xi2" secondAttribute="bottom" constant="82" id="wB0-k7-mbj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265" y="-92"/>
+        </scene>
+        <!--PROFESSOR-->
+        <scene sceneID="dAN-rI-zZP">
+            <objects>
+                <viewController title="PROFESSOR" id="Ezt-lY-3dM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UTQ-oh-3EO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cs" translatesAutoresizingMaskIntoConstraints="NO" id="lUW-MA-BxJ">
+                                <rect key="frame" x="67" y="563" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="nDw-2J-a5T"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Least Favorite Professor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLm-Pt-s0C">
+                                <rect key="frame" x="81.666666666666686" y="75" width="212" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="My least favorite professor in the Computer Science department is Waxman." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lQk-z0-HmU">
+                                <rect key="frame" x="67" y="199" width="241" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="nXE-b7-99A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lQk-z0-HmU" firstAttribute="leading" secondItem="hjZ-R3-JBD" secondAttribute="leading" constant="67" id="C8K-TA-IHf"/>
+                            <constraint firstItem="oLm-Pt-s0C" firstAttribute="centerX" secondItem="UTQ-oh-3EO" secondAttribute="centerX" id="Vmj-md-xQN"/>
+                            <constraint firstItem="hjZ-R3-JBD" firstAttribute="bottom" secondItem="lUW-MA-BxJ" secondAttribute="bottom" constant="87" id="diJ-GX-IGw"/>
+                            <constraint firstItem="oLm-Pt-s0C" firstAttribute="top" secondItem="hjZ-R3-JBD" secondAttribute="top" constant="31" id="fIX-ZW-aTN"/>
+                            <constraint firstItem="lQk-z0-HmU" firstAttribute="leading" secondItem="lUW-MA-BxJ" secondAttribute="leading" id="fyE-ds-d2f"/>
+                            <constraint firstItem="lQk-z0-HmU" firstAttribute="trailing" secondItem="lUW-MA-BxJ" secondAttribute="trailing" id="j2M-rf-Bb3"/>
+                            <constraint firstItem="lQk-z0-HmU" firstAttribute="top" secondItem="UTQ-oh-3EO" secondAttribute="top" constant="199" id="xbQ-Xd-TdE"/>
+                            <constraint firstItem="oLm-Pt-s0C" firstAttribute="centerX" secondItem="lQk-z0-HmU" secondAttribute="centerX" id="yP5-Fz-w2G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hjZ-R3-JBD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6SG-B1-gm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-266" y="715"/>
+        </scene>
+        <!--SHOES-->
+        <scene sceneID="1wP-jm-QK0">
+            <objects>
+                <viewController title="SHOES" id="0Ma-C9-OkR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bJU-73-61a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="My favorite pair of Jordans are Bred 4s." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JWa-Le-upK">
+                                <rect key="frame" x="76" y="51" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bred" translatesAutoresizingMaskIntoConstraints="NO" id="BYe-Ae-Ccx">
+                                <rect key="frame" x="67" y="248" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Favorite Jordans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUp-Pn-F86">
+                                <rect key="frame" x="110" y="551" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="g5W-Ic-aBf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0MA-I7-4TQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="715"/>
+        </scene>
+        <!--ALBUM-->
+        <scene sceneID="5ln-dL-cZs">
+            <objects>
+                <viewController title="ALBUM" id="weY-va-7W0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Icf-79-TnY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Favorite Album" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3e-D4-Sia">
+                                <rect key="frame" x="115" y="288" width="162" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yeezus" translatesAutoresizingMaskIntoConstraints="NO" id="Z2x-sE-dmf">
+                                <rect key="frame" x="76" y="109" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="B5s-dS-cgC"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Here's an unpopular opinion, my favorite Kanye West album is Yeezus." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fI8-S8-0Md">
+                                <rect key="frame" x="76" y="384" width="240" height="215"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z2x-sE-dmf" firstAttribute="leading" secondItem="fI8-S8-0Md" secondAttribute="leading" id="00V-V4-sww"/>
+                            <constraint firstItem="u3e-D4-Sia" firstAttribute="top" secondItem="Z2x-sE-dmf" secondAttribute="bottom" constant="51" id="EW5-PF-c16"/>
+                            <constraint firstItem="Z2x-sE-dmf" firstAttribute="centerX" secondItem="u3e-D4-Sia" secondAttribute="centerX" id="Hbo-hJ-cle"/>
+                            <constraint firstItem="u3e-D4-Sia" firstAttribute="leading" secondItem="Ql5-mR-vAW" secondAttribute="leading" constant="115" id="Rjc-ik-AzU"/>
+                            <constraint firstItem="fI8-S8-0Md" firstAttribute="top" secondItem="u3e-D4-Sia" secondAttribute="bottom" constant="72" id="a9S-M7-6A8"/>
+                            <constraint firstItem="Z2x-sE-dmf" firstAttribute="trailing" secondItem="fI8-S8-0Md" secondAttribute="trailing" id="cao-Xc-4kn"/>
+                            <constraint firstItem="Z2x-sE-dmf" firstAttribute="leading" secondItem="Ql5-mR-vAW" secondAttribute="leading" constant="76" id="ly7-bb-UrM"/>
+                            <constraint firstItem="Ql5-mR-vAW" firstAttribute="bottom" secondItem="fI8-S8-0Md" secondAttribute="bottom" constant="179" id="x5h-Gw-lBn"/>
+                            <constraint firstItem="Z2x-sE-dmf" firstAttribute="top" secondItem="Ql5-mR-vAW" secondAttribute="top" constant="65" id="z5j-OQ-zlx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ql5-mR-vAW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUy-WV-hCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="-92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ali" width="600" height="400"/>
+        <image name="bred" width="162" height="100"/>
+        <image name="cs" width="164" height="109"/>
+        <image name="yeezus" width="134" height="134"/>
+    </resources>
+</document>
