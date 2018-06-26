@@ -112,12 +112,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7M-du-REk">
-                                <rect key="frame" x="166" y="324" width="42" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7M-du-REk">
+                                <rect key="frame" x="166" y="332" width="42" height="47"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="logInPressed:" destination="pxM-5Q-MYo" eventType="touchUpInside" id="gSH-On-vGP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -134,12 +137,14 @@
                         <viewLayoutGuide key="safeArea" id="EtR-OO-xVX"/>
                     </view>
                     <connections>
+                        <outlet property="emailText" destination="4kl-qW-Agx" id="QUP-zS-fJL"/>
+                        <outlet property="passwordText" destination="woF-Y8-k8T" id="xiN-VZ-9qR"/>
                         <segue destination="hy5-ge-SMs" kind="show" identifier="toHomeVC" id="8p5-Gv-JFk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6H-Ac-b2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1825" y="374"/>
+            <point key="canvasLocation" x="-1826.4000000000001" y="373.89162561576359"/>
         </scene>
         <!--PROFESSOR-->
         <scene sceneID="dAN-rI-zZP">
@@ -359,6 +364,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="X1L-c2-klH" eventType="touchUpInside" id="GRa-Ru-DcW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -375,6 +383,8 @@
                         <viewLayoutGuide key="safeArea" id="g1b-Ps-bG4"/>
                     </view>
                     <connections>
+                        <outlet property="emailText" destination="CB7-nF-cy4" id="K5d-Et-lAz"/>
+                        <outlet property="passwordText" destination="taf-eB-3VB" id="woL-1N-qSB"/>
                         <segue destination="hy5-ge-SMs" kind="show" identifier="toHomeVC" id="N2B-8c-zPr"/>
                     </connections>
                 </viewController>
@@ -408,6 +418,6 @@
         <image name="yeezus" width="134" height="134"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8p5-Gv-JFk"/>
+        <segue reference="N2B-8c-zPr"/>
     </inferredMetricsTieBreakers>
 </document>

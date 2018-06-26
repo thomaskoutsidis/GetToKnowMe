@@ -9,7 +9,10 @@
 import UIKit
 
 class signUpVC: UIViewController {
-
+    
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +22,11 @@ class signUpVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func signUpPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toHomeVC", sender: nil)
     }
     
 

@@ -9,7 +9,9 @@
 import UIKit
 
 class logInVC: UIViewController {
-
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,10 @@ class logInVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func logInPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toHomeVC", sender: nil)    }
+    
+    
     /*
     // MARK: - Navigation
 
